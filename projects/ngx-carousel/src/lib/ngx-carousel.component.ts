@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ncl-ngx-carousel-lib',
+  selector: 'nc-ngx-carousel',
   template: `
     <p>
-      ngx-carousel-lib works!
+      ngx-carousel works!
     </p>
   `,
   styles: []
 })
-export class NgxCarouselLibComponent implements OnInit {
+export class NgxCarouselComponent implements OnInit {
 
   constructor() { }
 

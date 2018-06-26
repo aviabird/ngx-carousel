@@ -22,6 +22,18 @@
       ],
       "ngx-carousel-lib/*": [
         "dist/ngx-carousel-lib/*"
+      ],
+      "carousel": [
+        "dist/carousel"
+      ],
+      "carousel/*": [
+        "dist/carousel/*"
+      ],
+      "ngx-carousel": [
+        "dist/ngx-carousel"
+      ],
+      "ngx-carousel/*": [
+        "dist/ngx-carousel/*"
       ]
     }
   }

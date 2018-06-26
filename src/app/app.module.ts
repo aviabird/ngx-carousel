@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgxCarouselModule } from 'ngx-carousel';
 
 import { AppComponent } from './app.component';
-import { NgxCarouselLibModule } from 'ngx-carousel-lib';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { NgxCarouselLibModule } from 'ngx-carousel-lib';
   ],
   imports: [
     BrowserModule,
-    NgxCarouselLibModule
+    NgxCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

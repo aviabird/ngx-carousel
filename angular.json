@@ -161,6 +161,86 @@
           }
         }
       }
+    },
+    "carousel": {
+      "root": "projects/carousel",
+      "sourceRoot": "projects/carousel/src",
+      "projectType": "library",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/carousel/tsconfig.lib.json",
+            "project": "projects/carousel/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/carousel/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/carousel/src/test.ts",
+            "tsConfig": "projects/carousel/tsconfig.spec.json",
+            "karmaConfig": "projects/carousel/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/carousel/tsconfig.lib.json",
+              "projects/carousel/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ngx-carousel": {
+      "root": "projects/ngx-carousel",
+      "sourceRoot": "projects/ngx-carousel/src",
+      "projectType": "library",
+      "prefix": "nc",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-carousel/tsconfig.lib.json",
+            "project": "projects/ngx-carousel/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ngx-carousel/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-carousel/src/test.ts",
+            "tsConfig": "projects/ngx-carousel/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-carousel/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-carousel/tsconfig.lib.json",
+              "projects/ngx-carousel/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-carousel-lib-app"

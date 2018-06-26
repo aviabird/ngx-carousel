@@ -5,11 +5,19 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build --prod ngx-carousel",
+    "npm:pack": "cd dist/ngx-carousel && npm pack",
+    "package": "npm run build:lib && npm run npm:pack",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Pankaj Rawat",
+    "email": "pankaj@aviabird.com"
+  },
   "dependencies": {
     "@angular/common": "^6.0.3",
     "@angular/core": "^6.0.3",
