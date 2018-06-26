@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-carousel-lib": [
+        "dist/ngx-carousel-lib"
+      ],
+      "ngx-carousel-lib/*": [
+        "dist/ngx-carousel-lib/*"
+      ]
+    }
   }
 }
